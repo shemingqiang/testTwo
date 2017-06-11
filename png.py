@@ -7,7 +7,7 @@
   class Qr_config():
       def __init__(self):
           self.cf = ConfigParser.ConfigParser()
-         self.cf.read("config.ini")
+         self.cf.read("config.properties")
          self.jenkins_pro_address = self.cf.get("config", "jenkins_address")
          self.project_name = self.cf.get("config", "project_name")
          self.apk_home = self.cf.get("config", "apk_home")
